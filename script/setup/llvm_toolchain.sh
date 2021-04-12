@@ -32,6 +32,12 @@ sudo apt install libc++-10-dev libc++abi-10-dev
 # libfuzzer
 # apt-get install libfuzzer-10-dev
 
+sudo apt install \
+    python3 \
+    python3-pip
+
+sudo -H pip3 install compiledb
+
 # gcc-arm-none-eabi
 sudo apt install \
     gcc-arm-none-eabi \
