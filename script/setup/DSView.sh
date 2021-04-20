@@ -19,7 +19,7 @@ sudo apt install \
     libboost-system-dev \
     libboost-filesystem-dev \
     check \
-    libfftw3-dev
+    libfftw3-dev -y
 
 ## Get Source Code
 cd ~

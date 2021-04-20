@@ -1,15 +1,15 @@
 ## remove old version
 sudo apt remove docker \
                docker-engine \
-               docker.io
+               docker.io -y
 ## https setup
-sudo apt update
+sudo apt update -y
 sudo apt install \
     apt-transport-https \
     ca-certificates \
     curl \
     gnupg-agent \
-    software-properties-common
+    software-properties-common -y
 
 ## GPG key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -27,7 +27,7 @@ sudo add-apt-repository \
 #    stable"
 
 sudo apt update
-sudo apt install docker-ce docker-ce-cli containerd.io
+sudo apt install docker-ce docker-ce-cli containerd.io -y
 
 ## Start docker
 sudo systemctl enable docker

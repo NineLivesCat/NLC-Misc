@@ -7,7 +7,7 @@ sudo apt install \
     llvm-10 \
     llvm-10-dev \
     llvm-10-runtime \
-    llvm-10-tools
+    llvm-10-tools -y
 
 ## Clang and co
 sudo apt install \
@@ -18,15 +18,15 @@ sudo apt install \
     libclang-common-10-dev \
     libclang-10-dev \
     libclang1-10 \
-    clangd-10
+    clangd-10 -y
     # python-clang-10
 
 # lldb
-sudo apt install lldb-10
+sudo apt install lldb-10 -y
 # lld (linker)
-sudo apt install lld-10
+sudo apt install lld-10 -y
 # libc++
-sudo apt install libc++-10-dev libc++abi-10-dev
+sudo apt install libc++-10-dev libc++abi-10-dev -y
 # OpenMP
 # apt-get install libomp-10-dev
 # libfuzzer
@@ -34,15 +34,15 @@ sudo apt install libc++-10-dev libc++abi-10-dev
 
 sudo apt install \
     python3 \
-    python3-pip
+    python3-pip -y
 
-sudo -H pip3 install compiledb
+sudo -H pip3 install compiledb -y
 
 # gcc-arm-none-eabi
 sudo apt install \
     gcc-arm-none-eabi \
     binutils-arm-none-eabi \
-    openocd
+    openocd -y
 
 #### latest version
 # bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
